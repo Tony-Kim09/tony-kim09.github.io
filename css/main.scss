@@ -67,6 +67,7 @@ header {
   font-weight: bold;
   color: #002398;
 
+
     span {
       margin-top: 1em;
       margin-right: 0.5em;
@@ -127,7 +128,9 @@ section {
 .featured-img {
   border-radius: 1em;
   border-style: solid;
+  border-width: 1px;
   border-color: #C7E9FF;
+  max-width: 500px;
 }
 
 .skills {
@@ -147,15 +150,15 @@ section {
     margin: 0 auto;
 
     &.one {
-      width: 85px;
+      width: 70px;
     }
 
     &.two {
-      width: 75px;
+      width: 65px;
     }
 
     &.three {
-      width: 78px;
+      width: 65px;
     }
   }
 
@@ -175,12 +178,14 @@ section {
 .portfolio-container {
   border-bottom: groove;
   border-bottom-color: #C4E7FF;
-  margin-bottom: 2.1em;
 
   a img {
     border-radius: 1em;
+    border-width: 1px;
     border-style: solid;
     border-color: #C7E9FF;
+    margin-bottom: 2.1em;
+    max-width: 300px;
   }
 }
 
@@ -216,17 +221,18 @@ section {
       grid-gap: 1em;
     }
     .portfolio {
-      padding-top: 6em;
+      padding-top: 4em;
     }
 
     .portfolio-container img {
-      margin-left: 2em;
+      margin-left: 4em;
+      margin-top: 2em;
     }
 }
 
 @media only screen and (min-width: 1050px) {
   .hero {
-    height:90vh;
+    height:70vh;
   }
 
   .nav-container {
@@ -236,6 +242,7 @@ section {
 
     header {
       background: #0080FF;
+      justify-content: unset;
     }
   }
 
@@ -256,12 +263,11 @@ section {
 
     ul {
       display: flex;
-      justify-content: right;
+      justify-content: space-between;
       width: 7em;
       float: right;
-
       img {
-        width: 20px;
+        width: 35px;
       }
     }
   }
@@ -291,11 +297,16 @@ section {
     margin-left: -40%;
     margin-top: 16%;
     width: 130%;
+    max-width: 600px;
   }
 
+  .portfolio-left {
+    margin-left: 2em;
+  }
   .portfolio img {
     float: right;
     max-width: 500px;
+    margin-right: 2em;
   }
 }
 
@@ -314,6 +325,9 @@ section {
 
   .hero .content {
     padding: 6em 8em 6em 10em;
+  }
+  .portfolio img {
+    margin-left: 4em;
   }
 }
 
