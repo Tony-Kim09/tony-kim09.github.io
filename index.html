@@ -18,7 +18,7 @@
           <ul>
             <li><a href="#featured">Featured</a></li>
             <li><a href="#skills">My Skills</a></li>
-            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#portfolio">My Projects</a></li>
           </ul>
         </nav>
       </header>
@@ -62,36 +62,36 @@
     </div>
     
     <!--Featured Project Section-->
-    <section class="featured">
+    <section id="featured" class="featured">
       <div class="left">
         <div class="inner transition2">
           <p class="subtitle">Featured Project</p>
-          <a href="#" class="featured-title">Messenger Application</a>
+          <a href="https://github.com/Tony-Kim09/messenger-app" class="featured-title">Messenger Application</a>
           
           <p class="featured-desc">Messenger application created using MERN stack. It has real-time updates through the use of SocketIO. Utilized bcrypt and json-webtoken for security and authentication. Carefully designed the database to reduce redundancy. The design aspect was created using Material-UI for React</p>
         </div>
       </div>
-      <img class="featured-img transition2" src="assets/messengerlogin.PNG" alt="Featured Project" class="right transition2">
+      <a href="https://github.com/Tony-Kim09/messenger-app"><img class="featured-img transition2" src="assets/messengerlogin.PNG" alt="Featured Project" class="right transition2"></a>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
       <div class="skills-container">
         <ul>
-          <li class="transition2">
+          <li class="transition4">
             <div class="icon-container one">
               <img src="assets/html-website-svgrepo-com.svg" alt="FrontEnd Developer">
             </div>
             <p class="skill-title">FrontEnd Developer</p>
             <p class="featured-desc skill-desc">Skilled in mordern frontend framework such as React as well as skilled in HTML, CSS, and Javascript. Using modern frameworks to simplify logic and created websites such as my messenger application with efficiency</p>
           </li>
-          <li class="transition2">
+          <li class="transition4">
             <div class="icon-container two">
               <img src="assets/server-svgrepo-com.svg" alt="BackEnd Developer">
             </div>
             <p class="skill-title">BackEnd Developer</p>
             <p class="featured-desc skill-desc">Strong backend fundamentals with firm knowledge of RESTful API conventions. Clean organization skills for readability and great awareness to security. Created various tests, such as unit testing, to ensure product works before pushing to production.</p>
           </li>
-          <li class="transition2">
+          <li class="transition4">
             <div class="icon-container three">
               <img src="assets/database-svgrepo-com.svg" alt="FrontEnd Developer">
             </div>
@@ -102,7 +102,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
@@ -111,7 +111,7 @@
             <p class="featured-desc">A simple but clean application where you can convert weight or volume to desired unit of measurement. Application has been deployed to the android playstore for you to try out for free!</p>
           </div>
         </div>
-        <a href="#"><img class="right" src="assets/cookingcalculator.svg" alt="cookingcalculator"></a>
+        <a href="https://play.google.com/store/apps/details?id=tkessentials.simplecookingconverter"><img class="right" src="assets/cookingcalculator.svg" alt="cookingcalculator"></a>
       </div>
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
@@ -121,7 +121,7 @@
             <p class="featured-desc">Networking application using HTML, CSS, PHP, Javascript, and MySQL through the help of Oreily's textbook. Added personal features to increase security protocals. </p>
           </div>
         </div>
-        <a href="#"><img class="right" src="assets/TKNetwork.PNG" alt="tknetwork"></a>
+        <a href="https://github.com/Tony-Kim09/TK-Network"><img class="right" src="assets/TKNetwork.PNG" alt="tknetwork"></a>
       </div>
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
@@ -131,9 +131,13 @@
             <p class="featured-desc">Data science project created using python. Utilized statistical librarys to plot graphs and maps to analyze data. Used data wrangling techniques to fine-tune data salvaged through external sources.</p>
           </div>
         </div>
-        <a href="#"><img class="right" src="assets/datascience2.PNG" alt="datascience"></a>
+        <a href="https://nbviewer.jupyter.org/github/Tony-Kim09/Capstone-Project--Finding-the-best-store-type-in-Toronto/blob/master/Best%20Store%20type%20in%20Toronto.ipynb"><img class="right" src="assets/datascience2.PNG" alt="datascience"></a>
       </div>
     </section>
+
+    <footer>
+      
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
@@ -182,10 +186,21 @@
         stagger: 0.3
       })
 
+      gsap.from(".transition4", {
+        scrollTrigger: {
+          trigger: ".transition4",
+          start: "top bottom"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.2
+      })
+
       gsap.from(".transition3", {
         scrollTrigger: {
           trigger: ".transition3",
-          start: "top center"
+          start: "top bottom"
         }, 
         y: 50,
         opacity: 0,
