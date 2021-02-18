@@ -54,7 +54,7 @@ header ul {
 
 header ul a {
   display: block;
-  padding: 0 1em;
+  padding: 0 0.75em;
 }
 
 .social-header, .hero-design {
@@ -202,6 +202,9 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
+  header ul a {
+    padding: 0 1em;
+  }
   .featured, .portfolio {
     text-align: left;
   }
@@ -308,6 +311,9 @@ section {
     width: 130%;
     max-width: 600px;
   }
+  .featured-img {
+    margin-left: 8em;
+  }
   .portfolio-left {
     margin-left: 2em;
   }
@@ -334,6 +340,9 @@ section {
   .portfolio img {
     margin-left: 4em;
   }
+  .featured-img {
+    max-width: 650px;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -348,6 +357,9 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+  .featured-img {
+    max-width: 800px;
   }
 }
 
