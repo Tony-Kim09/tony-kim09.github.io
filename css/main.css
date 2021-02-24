@@ -328,6 +328,12 @@ section {
   header {
     padding: 2em 2em 2em 10em;
   }
+  .featured, .skills, .portfolio {
+    padding: 2em 2em 4em 10em;
+  }
+  .featured::before {
+    left: 6em;
+  }
   .social-header {
     padding: 2em 10em 2em 0;
   }
@@ -347,16 +353,28 @@ section {
 
 @media only screen and (min-width: 1550px) {
   header {
-    padding: 2em 2em 2em 20em;
+    padding: 2em 2em 2em 10em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 10em;
+  }
+  .featured, .skills, .portfolio {
+    padding: 2em 2em 4em 10em;
+  }
+  .featured::before {
+    top: 2em;
+    left: 14em;
+    width: 225px;
+    height: 225px;
   }
   .social-header {
-    padding: 2em 20em 2em 0;
+    padding: 2em 13.5em 2em 0;
   }
   .section {
     padding: 6em 20em 4em 20em;
   }
-  .hero .content {
-    padding: 9em 20em 6em 20em;
+  .scroll {
+    margin-top: 0em;
   }
   .featured-img {
     max-width: 800px;
