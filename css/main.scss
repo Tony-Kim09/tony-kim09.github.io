@@ -244,7 +244,7 @@ section {
 
 @media only screen and (min-width: 1050px) {
   .hero {
-    height:70vh;
+    height:80vh;
   }
 
   .nav-container {
@@ -348,6 +348,9 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
+  .hero-design {
+    padding-bottom: 8em;
+  }
   .portfolio img {
     margin-left: 4em;
   }
@@ -365,8 +368,12 @@ section {
     padding: 9em 20em 6em 10em;
   }
 
-  .featured, .skills, .portfolio {
+  .featured, .portfolio {
     padding: 2em 2em 4em 10em;
+  }
+
+  .skills {
+    padding: 2em 8em 4em 8em;
   }
   
   .featured::before {
@@ -389,7 +396,10 @@ section {
   }
 
   .featured-img {
-    max-width: 800px;
+    max-width: 700px;
+  }
+  .portfolio-left {
+    margin-left: 0em;
   }
 }
 
