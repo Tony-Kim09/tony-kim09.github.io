@@ -1,225 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tony's Portfolio</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-  
-    <!--Header-->
-    <div class="nav-container">
-      <header>
-        <a href="index.html" class="logo">Tony Kim</p>
-
-        <nav>
-          <ul>
-            <li><a href="#featured">Featured</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class="social-header">
-        <ul>
-          <li><a href="https://github.com/Tony-Kim09"><img src="assets/github.svg" alt="github"></a></li>
-          <li><a href="https://www.linkedin.com/in/tony-kim-14414b195/"><img src="assets/linkedin.svg" alt="linkedin"></a></li>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony's PortFolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans
+    +Pro:wght@300;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item" ><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item" ><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item" ><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item" ><a class="nav-link" href="#project">Projects</a></li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <!--Hero Section-->
-    <div class="hero">
-      <div class="content">
-        <h1 class="stagger1">Creating Solid Foundation For Better Experiences</h1>
-        <div class="meet stagger1">          
-          <span>👇</span>
-          <p>Meet Tony Kim</p>
-        </div>
-        <svg class="scroll stagger1" width="86" height="143" viewBox="0 0 86 143">
-          <g id="Scroll_Icon" data-name="Scroll Icon" transform="translate(-193 -719)">
-            <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(193 719)" fill="none" stroke="#fff" stroke-width="9">
-              <rect width="86" height="143" rx="43" stroke="none"/>
-              <rect x="4.5" y="4.5" width="77" height="134" rx="38.5" fill="none"/>
-            </g>
-            <ellipse class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="24" cy="25.5" rx="24" ry="25.5" transform="translate(212 741)" fill="#fff"/>
-          </g>
-        </svg>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="hero-design" width="800.468" height="557.805" viewBox="0 0 800.468 557.805">
-        <g id="hero-img" transform="translate(-786.532 -231.293)">
-          <rect class="square-anim" id="Rectangle_3" data-name="Rectangle 3" width="188.708" height="188.708" rx="20" transform="matrix(-0.719, -0.695, 0.695, -0.719, 922.277, 789.098)" fill="#684ec1"/>
-          <rect class="square-anim" id="Rectangle_13" data-name="Rectangle 13" width="188.708" height="188.708" rx="20" transform="matrix(-0.719, -0.695, 0.695, -0.719, 1455.912, 785.865)" fill="#684ec1"/>
-          <rect class="square-anim" id="Rectangle_7" data-name="Rectangle 7" width="188.708" height="188.708" rx="20" transform="matrix(-0.719, -0.695, 0.695, -0.719, 1189.079, 785.865)" fill="#fff"/>
-          <rect class="square-anim" id="Rectangle_14" data-name="Rectangle 14" width="188.708" height="188.708" rx="20" transform="matrix(-0.719, -0.695, 0.695, -0.719, 1189.127, 498.126)" fill="#5839c4"/>
-          <ellipse class="square-anim" id="Ellipse_2" data-name="Ellipse 2" cx="93.703" cy="95.005" rx="93.703" ry="95.005" transform="matrix(-0.719, -0.695, 0.695, -0.719, 1054.742, 642.96)" fill="#ff647e"/>
-          <ellipse class="square-anim" id="Ellipse_3" data-name="Ellipse 3" cx="93.703" cy="95.005" rx="93.703" ry="95.005" transform="matrix(-0.719, -0.695, 0.695, -0.719, 1321.624, 642.96)" fill="#81ffc8"/>
-        </g>
-      </svg>
-    </div>
-    
-    <!--Featured Project Section-->
-    <section id="featured" class="featured">
-      <div class="left">
-        <div class="inner transition2">
-          <p class="subtitle">Featured Project</p>
-          <a href="https://github.com/Tony-Kim09/messenger-app" class="featured-title">Messenger Application</a>
-          
-          <p class="featured-desc">Fullstack project created using MERN stack. It has real-time updates through the use of SocketIO. The UI was designed using MaterialUI for React. Sensitive information was hidden through token and hashing with simple but effective database architecture.</p>
-        <a href="https://tk-messanger-app.herokuapp.com/">See Demo</a>
-        </div>
-      </div>
-      <a href="https://github.com/Tony-Kim09/messenger-app"><img class="featured-img transition2" src="assets/newBGMessanger.PNG" alt="Featured Project" class="right transition2"></a>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section-title section-title-intro">
+        Hi, I am <strong>Tony Kim</strong>
+      </h1>
+      <p class="section-subtitle section-subtitle-intro">Fullstack Dev</p>
+      <img src="assets/tklogo.svg" alt="Tony Kim" class="intro-img">
     </section>
 
-    <section id="skills" class="skills">
-      <div class="skills-container">
-        <ul>
-          <li class="transition4">
-            <div class="icon-container one">
-              <img src="assets/html-website-svgrepo-com.svg" alt="FrontEnd Developer">
-            </div>
-            <p class="skill-title">FrontEnd Developer</p>
-            <p class="featured-desc skill-desc">Skilled in React, HTML, CSS, and Javascript with focus on security and usability</p>
-          </li>
-          <li class="transition4">
-            <div class="icon-container two">
-              <img src="assets/server-svgrepo-com.svg" alt="BackEnd Developer">
-            </div>
-            <p class="skill-title">BackEnd Developer</p>
-            <p class="featured-desc skill-desc">Strong backend fundamentals with firm knowledge of RESTful API conventions and clean organization skills with great awareness of security</p>
-          </li>
-          <li class="transition4">
-            <div class="icon-container three">
-              <img src="assets/database-svgrepo-com.svg" alt="FrontEnd Developer">
-            </div>
-            <p class="skill-title">SQL/NOSQL Databases</p>
-            <p class="featured-desc skill-desc">Experienced in both SQL/NOSQL databases including designing and maintaining databases for accesibility and reducing potential locking</p>
-          </li>
-        </ul>
-      </div>
+    <!-- My Skills -->
+    <section class="my-skills" id="skills">
+      <h2 class="section-title section-title-skills">My Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>FrontEnd Developer</h3>
+          <p>Skilled in React, HTML, CSS, and Javascript to create any modern websites with focus on concise and minimalistic UI as well as attention to web security. </p>
+        </div> <!-- / skill-->
+        <div class="skill">
+          <h3>BackEnd Developer</h3>
+          <p>Strong backend fundamentals with firm knowledge of RESTful API conventions and clean organization skills. Capable of finding optimal algorithms to increase efficiency and overall speed of the application</p>
+        </div> <!-- / skill-->
+        <div class="skill">
+          <h3>SQL/NOSQL Databases</h3>
+          <p>Proven knowledge of SQL databases by passing Microsoft's 70-761 T-SQL examination. Great understanding of database design, normalization, and optimization of SQL queries</p>
+        </div> <!-- / skill-->
+      </div> <!-- / skills-->
+      <a href="#featured" class="btn">My Projects</a>
     </section>
 
-    <section id="portfolio" class="portfolio">
-      <div class="portfolio-container transition3">
-        <div class="portfolio-left">
-          <div class="inner">
-            <p class="subtitle">Android App</p>
-            <p class="featured-title">Cooking Calculator</p>
-            <p class="featured-desc">A simple but clean application where you can convert weight or volume to desired unit of measurement. Application has been deployed to the android playstore for you to try out for free!</p>
-          </div>
-        </div>
-        <a href="https://play.google.com/store/apps/details?id=tkessentials.simplecookingconverter"><img class="right" src="assets/cookingcalculator.svg" alt="cookingcalculator"></a>
+    <!-- Featured Project -->
+    <section class="featured" id="featured">
+      <h2 class="section-title section-title-featured">
+        Featured Project
+      </h2>
+      <p class="section-subtitle section-subtitle-featured">
+        Messenger App
+      </p>
+      <div class="featured-body">
+        <p>Fullstack project created using MERN stack. It has real-time updates through the use of SocketIO. The UI was designed using MaterialUI for React. Sensitive information was hidden through token and hashing with simple but effective database architecture.</p>
+        <a class="featured-link" href="https://github.com/Tony-Kim09/messenger-app">More Info</a>
+        <a class="featured-link" href="https://tk-messanger-app.herokuapp.com/">Live Demo</a>
       </div>
-      <div class="portfolio-container transition3">
-        <div class="portfolio-left">
-          <div class="inner">
-            <p class="subtitle">Mobile App</p>
-            <p class="featured-title">Clima App</p>
-            <p class="featured-desc">This simple weather app tells you the weather at your current location through the use of openweathermap API with simple yet concise UI</p>
-          </div>
-        </div>
-        <a href="https://github.com/Tony-Kim09/Clima-Project"><img class="right" src="assets/ClimaApp.png" alt="clima-app"></a>
-      </div>
-      </div>
-      <div class="portfolio-container transition3">
-        <div class="portfolio-left">
-          <div class="inner">
-            <p class="subtitle">Web Networking App</p>
-            <p class="featured-title">TK Network</p>
-            <p class="featured-desc">Networking application using HTML, CSS, PHP, Javascript, and MySQL through the help of Oreily's textbook. Added personal features to increase security protocals. </p>
-          </div>
-        </div>
-        <a href="https://github.com/Tony-Kim09/TK-Network"><img class="right" src="assets/TKNetwork.PNG" alt="tknetwork"></a>
-      </div>
-      <div class="portfolio-container transition3">
-        <div class="portfolio-left">
-          <div class="inner">
-            <p class="subtitle">Data Science Project</p>
-            <p class="featured-title">Best Restaurant Type in Toronto</p>
-            <p class="featured-desc">Data science project created using python. Utilized statistical librarys to plot graphs and maps to analyze data. Used data wrangling techniques to fine-tune data salvaged through external sources.</p>
-          </div>
-        </div>
-        <a href="https://nbviewer.jupyter.org/github/Tony-Kim09/Capstone-Project--Finding-the-best-store-type-in-Toronto/blob/master/Best%20Store%20type%20in%20Toronto.ipynb"><img class="right" src="assets/datascience2.PNG" alt="datascience"></a>
+       <a href="https://github.com/Tony-Kim09/messenger-app" class="featured-img"><img src="assets/featured/MessengerRegisterPage.PNG" alt="messenger-img"></a> 
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-projects" id="project">
+      <h2 class="section-title section-title-project">My Projects</h2>
+      <p class="section-subtitle section-subtitle-project">A selection of my range of work</p>
+
+      <div class="portfolio">
+        
+        <!-- Cooking Calculator -->
+        <a href="https://play.google.com/store/apps/details?id=tkessentials.simplecookingconverter" class="portfolio-item">
+          <img src="assets/cookingcalculator.svg" alt="" class="portfolio-img">
+        </a>
+        
+        <!-- Clima App -->
+        <a href="https://github.com/Tony-Kim09/Clima-Project" class="portfolio-item">
+          <img src="assets/ClimaApp.png" alt="" class="portfolio-img">
+        </a>
+        
+        <!-- TKNetwork -->
+        <a href="https://github.com/Tony-Kim09/TK-Network" class="portfolio-item">
+          <img src="assets/TKNetwork.PNG" alt="" class="portfolio-img">
+        </a>
+        <!-- Data Science -->
+        <a href="https://github.com/Tony-Kim09/Capstone-Project--Finding-the-best-store-type-in-Toronto" class="portfolio-item">
+          <img src="assets/datascience2.PNG" alt="" class="portfolio-img">
+        </a>
       </div>
     </section>
 
-    <footer>
-      
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:tonykim0909@gmail.com" class="footer-link">Get in Touch</a>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="https://github.com/Tony-Kim09" class="social-list-link">
+            <i class="fab fa-github"></i>
+          </a> 
+        </li>
+        <li class="social-list-item">
+          <a href="https://www.linkedin.com/in/tony-kim-14414b195/" class="social-list-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="https://twitter.com" class="social-list-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
-
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
-      var tl = gsap.timeline();
-
-      tl.from(".hero", {
-          y: "-30%",
-          opacity: 0,
-          duration: 2,
-          ease: Power4.easeOut
-      })
-
-      tl.from(".stagger1", {
-        opacity:0,
-        y: -50,
-        stagger: 0.3,
-        ease: Power4.easeOut
-      }, "-=1.5")
-      
-      tl.from(".hero-design", {
-        opacity: 0,
-        x: 500,
-        ease: Power4.easeOut,
-        duration: 1
-      }, "-=2")
-
-      gsap.from(".square-anim", {
-        stagger: 0.1,
-        scale: 0,
-        duration: 1,
-        ease: Back.easeOut.config(1.7)
-      })
-
-      gsap.from(".transition2", {
-        scrollTrigger: {
-          trigger: ".transition2",
-          start: "top bottom"
-        },
-        y: 50,
-        opacity: 0,
-        duration: 1.2,
-        stagger: 0.3
-      })
-
-      gsap.from(".transition4", {
-        scrollTrigger: {
-          trigger: ".transition4",
-          start: "top bottom"
-        },
-        y: 50,
-        opacity: 0,
-        duration: 1.2,
-        stagger: 0.2
-      })
-
-      gsap.from(".transition3", {
-        scrollTrigger: {
-          trigger: ".transition3",
-          start: "top bottom"
-        }, 
-        y: 50,
-        opacity: 0,
-        duration: 1.2,
-        stagger: 0.6
-      })
-    </script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
