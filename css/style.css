@@ -238,6 +238,7 @@ header {
 
 .intro-img {
   max-height: 400px;
+  max-width: 250px;
   box-shadow: var(--bs);
   position: relative;
   z-index: 2;
