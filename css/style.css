@@ -237,7 +237,10 @@ header {
 }
 
 .intro-img {
+  max-height: 400px;
   box-shadow: var(--bs);
+  position: relative;
+  z-index: 2;
 }
 
 .section-subtitle-intro {
@@ -379,6 +382,7 @@ header {
   }
 
   .featured-img {
+
     grid-area: img;
     border-radius: 0.5em;
     position: relative;
