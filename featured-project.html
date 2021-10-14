@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony's PortFolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans
+    +Pro:wght@300;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item" ><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item" ><a class="nav-link" href="./index.html#skills">Skills</a></li>
+          <li class="nav-item" ><a class="nav-link" href="./index.html#featured">Featured</a></li>
+          <li class="nav-item" ><a class="nav-link" href="./index.html#project">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section-title section-title-intro">
+        Here is my <strong>Messenger App</strong>
+      </h1>
+      <p class="section-subtitle section-subtitle-intro">Fullstack Application</p>
+      <img src="assets/featured/messenger-pic.png" alt="Messenger Pic" class="intro-img" width="400px">
+    </section>
+
+    <!-- Info -->
+    <div class="portfolio-item-individual">
+      <p>This is a fullstack application built using React with MaterialUI for Frontend and Node.js/Express for Backend. 
+        For database, I used MongoDB Atlas for cloud storage.</p>
+      <img src="./assets/featured/MessengerRegisterPage.PNG" alt="Register Page">
+      <p>
+        New users can register using this simple and intuitive register page. 
+        Validations are used to ensure the values are valid, such as minimum length for password or proper email format. 
+        If any of these values are invalid, an error message with helper texts will appear, assisting users to fill in the values correctly.
+      </p>
+      <img src="./assets/featured/InvalidInput.PNG" alt="Invalid Input">
+      <p>After logging in, users can click on any existing users on the left hand side to begin chatting with them. 
+        To test it out, I recommend opening two separate browsers for the real time chatting experience.</p>
+      <img src="./assets/featured/MessengerChatPage.PNG" alt="Chat Page">
+      <p>I have thoroughly tested the backend to ensure the APIs are properly functioning using Mocha/Chai.</p>
+      <img src="./assets/featured/backendUnitTest.PNG" alt="Unit Test">
+      <p>Finally, I have also integrated End to End testing using Cypress to make sure the front-end can properly communicate with the back-end.
+      </p>
+      <img src="./assets/featured/messengerCypress.PNG" alt="Cypress Test">
+      <p>Check out the code by clicking the button below.</p>
+      <a class="featured-link" href="https://github.com/Tony-Kim09/messenger-app">See Code</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:tonykim0909@gmail.com" class="footer-link">Get in Touch</a>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="https://github.com/Tony-Kim09" class="social-list-link">
+            <i class="fab fa-github"></i>
+          </a> 
+        </li>
+        <li class="social-list-item">
+          <a href="https://www.linkedin.com/in/tony-kim-14414b195/" class="social-list-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="https://twitter.com" class="social-list-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

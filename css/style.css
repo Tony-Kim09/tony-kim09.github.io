@@ -237,7 +237,6 @@ header {
 }
 
 .intro-img {
-  max-height: 400px;
   max-width: 250px;
   box-shadow: var(--bs);
   position: relative;
@@ -463,4 +462,16 @@ header {
 
 .social-list-link {
   padding: 0.5em;
+}
+
+/* Portfolio Item */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 800px;
 }
