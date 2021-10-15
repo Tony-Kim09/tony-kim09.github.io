@@ -475,3 +475,9 @@ header {
 .portfolio-item-individual p {
   max-width: 800px;
 }
+
+.portfolio-item-individual img {
+  border: 1px;
+  border-color: var(--clr-dark);
+  border-style: solid;
+}
