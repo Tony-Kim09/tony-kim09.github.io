@@ -1,127 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tony's PortFolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tony's PortFolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans
     +Pro:wght@300;900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item" ><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#featured">Featured</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#project">Projects</a></li>
-        </ul>
-      </nav>
-    </header>
+</head>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section-title section-title-intro">
-        Hi, I am <strong>Tony Kim</strong>
-      </h1>
-      <p class="section-subtitle section-subtitle-intro">Fullstack Dev</p>
-      <img src="assets/tklogo.svg" alt="Tony Kim" class="intro-img">
-    </section>
-
-    <!-- My Skills -->
-    <section class="my-skills" id="skills">
-      <h2 class="section-title section-title-skills">My Skills</h2>
-      <div class="skills">
-        <div class="skill">
-          <h3>FrontEnd Developer</h3>
-          <p>Skilled in React, HTML, CSS, and Javascript to create any modern websites with focus on concise and minimalistic UI as well as attention to web security. </p>
-        </div> <!-- / skill-->
-        <div class="skill">
-          <h3>BackEnd Developer</h3>
-          <p>Strong backend fundamentals with firm knowledge of RESTful API conventions and clean organization skills. Capable of finding optimal algorithms to increase efficiency and overall speed of the application</p>
-        </div> <!-- / skill-->
-        <div class="skill">
-          <h3>SQL/NOSQL Databases</h3>
-          <p>Proven knowledge of SQL databases by passing Microsoft's 70-761 T-SQL examination. Great understanding of database design, normalization, and optimization of SQL queries</p>
-        </div> <!-- / skill-->
-      </div> <!-- / skills-->
-      <a href="#featured" class="btn">My Projects</a>
-    </section>
-
-    <!-- Featured Project -->
-    <section class="featured" id="featured">
-      <h2 class="section-title section-title-featured">
-        Featured Project
-      </h2>
-      <p class="section-subtitle section-subtitle-featured">
-        Messenger App
-      </p>
-      <div class="featured-body">
-        <p>Fullstack project created using MERN stack. It has real-time updates through the use of SocketIO. The UI was designed using MaterialUI for React. Sensitive information was hidden through token and hashing with simple but effective database architecture.</p>
-        <a class="featured-link" href="./featured-project.html">More Info</a>
-        <a class="featured-link" href="https://tk-messanger-app.herokuapp.com/">Live Demo</a>
-      </div>
-       <a href="./featured-project.html" class="featured-img"><img src="assets/featured/messenger-pic.png" alt="messenger-img"></a> 
-    </section>
-
-    <!-- My Projects -->
-    <section class="my-projects" id="project">
-      <h2 class="section-title section-title-project">My Projects</h2>
-      <p class="section-subtitle section-subtitle-project">A selection of my range of work</p>
-
-      <div class="portfolio">
-        
-        <!-- Cooking Calculator -->
-        <a href="https://play.google.com/store/apps/details?id=tkessentials.simplecookingconverter" class="portfolio-item">
-          <img src="assets/CookingPortFolioPic.png" alt="" class="portfolio-img">
-        </a>
-        
-        <!-- Clima App -->
-        <a href="https://github.com/Tony-Kim09/Clima-Project" class="portfolio-item">
-          <img src="assets/ClimaPortFolioPic.png" alt="" class="portfolio-img">
-        </a>
-        
-        <!-- TKNetwork -->
-        <a href="https://github.com/Tony-Kim09/TK-Network" class="portfolio-item">
-          <img src="assets/NetworkPortFolioPic.png" alt="" class="portfolio-img">
-        </a>
-        <!-- Data Science -->
-        <a href="https://github.com/Tony-Kim09/Capstone-Project--Finding-the-best-store-type-in-Toronto" class="portfolio-item">
-          <img src="assets/DataSciencePortFolioPic.png" alt="" class="portfolio-img">
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <a href="mailto:tonykim0909@gmail.com" class="footer-link">Get in Touch</a>
-      <ul class="social-list">
-        <li class="social-list-item">
-          <a href="https://github.com/Tony-Kim09" class="social-list-link">
-            <i class="fab fa-github"></i>
-          </a> 
-        </li>
-        <li class="social-list-item">
-          <a href="https://www.linkedin.com/in/tony-kim-14414b195/" class="social-list-link">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="social-list-item">
-          <a href="https://twitter.com" class="social-list-link">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
+<body>
+  <header>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
       </ul>
-    </footer>
+    </nav>
+  </header>
 
-    <script src="js/index.js"></script>
-  </body>
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section-title section-title-intro">
+      Hi, I am <strong>Tony Kim</strong>
+    </h1>
+    <p class="section-subtitle section-subtitle-intro">Fullstack Dev</p>
+    <img src="assets/tklogo.svg" alt="Tony Kim" class="intro-img">
+  </section>
+
+  <!-- My Skills -->
+  <section class="my-skills" id="skills">
+    <h2 class="section-title section-title-skills">My Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>FrontEnd Developer</h3>
+        <p>Skilled in React, HTML, CSS, and Javascript to create any modern websites with focus on concise and
+          minimalistic UI as well as attention to web security. </p>
+      </div> <!-- / skill-->
+      <div class="skill">
+        <h3>BackEnd Developer</h3>
+        <p>Strong backend fundamentals with firm knowledge of RESTful API conventions and clean organization skills.
+          Capable of finding optimal algorithms to increase efficiency and overall speed of the application</p>
+      </div> <!-- / skill-->
+      <div class="skill">
+        <h3>SQL/NOSQL Databases</h3>
+        <p>Proven knowledge of SQL databases by passing Microsoft's 70-761 T-SQL examination. Great understanding of
+          database design, normalization, and optimization of SQL queries</p>
+      </div> <!-- / skill-->
+    </div> <!-- / skills-->
+    <a href="#featured" class="btn">My Projects</a>
+  </section>
+
+  <!-- Featured Project -->
+  <section class="featured" id="featured">
+    <h2 class="section-title section-title-featured">
+      Featured Project
+    </h2>
+    <p class="section-subtitle section-subtitle-featured">
+      Messenger App
+    </p>
+    <div class="featured-body">
+      <p>Fullstack project created using MERN stack. It has real-time updates through the use of SocketIO. The UI was
+        designed using MaterialUI for React. Sensitive information was hidden through token and hashing with simple but
+        effective database architecture.</p>
+      <a class="featured-link" href="./featured-project.html">More Info</a>
+      <a class="featured-link" href="https://tk-messanger-app.herokuapp.com/">Live Demo</a>
+    </div>
+    <a href="./featured-project.html" class="featured-img"><img src="assets/featured/messenger-pic.png"
+        alt="messenger-img"></a>
+  </section>
+
+  <!-- My Projects -->
+  <section class="my-projects" id="project">
+    <h2 class="section-title section-title-project">My Projects</h2>
+    <p class="section-subtitle section-subtitle-project">A selection of my range of work</p>
+
+    <div class="portfolio">
+      <!-- Front-End Sushi Website -->
+      <a href="https://tk-sushi.herokuapp.com/" class="portfolio-item">
+        <img src="assets/sushi-website.png" alt="sushi-website" class="portfolio-img">
+      </a>
+
+      <!-- Cooking Calculator -->
+      <a href="https://play.google.com/store/apps/details?id=tkessentials.simplecookingconverter"
+        class="portfolio-item">
+        <img src="assets/CookingPortFolioPic.png" alt="cooking-calculator" class="portfolio-img">
+      </a>
+
+      <!-- Clima App -->
+      <a href="https://github.com/Tony-Kim09/Clima-Project" class="portfolio-item">
+        <img src="assets/ClimaPortFolioPic.png" alt="clima-app" class="portfolio-img">
+      </a>
+
+      <!-- TKNetwork -->
+      <a href="https://github.com/Tony-Kim09/TK-Network" class="portfolio-item">
+        <img src="assets/NetworkPortFolioPic.png" alt="tk-network" class="portfolio-img">
+      </a>
+      <!-- Data Science -->
+      <a href="https://github.com/Tony-Kim09/Capstone-Project--Finding-the-best-store-type-in-Toronto"
+        class="portfolio-item">
+        <img src="assets/DataSciencePortFolioPic.png" alt="data-science-project" class="portfolio-img">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:tonykim0909@gmail.com" class="footer-link">Get in Touch</a>
+    <ul class="social-list">
+      <li class="social-list-item">
+        <a href="https://github.com/Tony-Kim09" class="social-list-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list-item">
+        <a href="https://www.linkedin.com/in/tony-kim-14414b195/" class="social-list-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li class="social-list-item">
+        <a href="https://twitter.com" class="social-list-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
 </html>
